@@ -1,0 +1,231 @@
+/* Header mobile */
+/* Auto layout */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+input {
+  outline: none;
+}
+
+Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  top: 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 70px;
+}
+Header .group1 {
+  width: 100%;
+  padding: 17px 20.94px 16px;
+  border-bottom: 1px solid rgb(226, 223, 223);
+}
+Header .group1 div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+Header .group1 div .group1-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+Header .group1 div .group1-logo div:nth-child(1) {
+  width: 29.83px;
+  height: 29.83px;
+  margin-right: 10px;
+}
+Header .group1 div .group1-logo div:nth-child(1) svg {
+  width: 29.83px;
+  height: 29.83px;
+}
+Header .group1 div .group1-logo div:nth-child(2) {
+  height: 18.35px;
+}
+Header .group1 div .group1-logo div:nth-child(2) svg {
+  height: 18.35px;
+}
+Header .group1 div .group1-icon {
+  width: 22.23px;
+  height: 20.94px;
+  align-items: center;
+  cursor: pointer;
+}
+Header .group1 div .group1-icon svg {
+  width: 22.23px;
+  height: 20.94px;
+  text-anchor: middle;
+}
+Header .group2 {
+  width: 100%;
+  display: flex;
+  height: 41px;
+  align-items: center;
+}
+Header .group2 label {
+  display: flex;
+  margin: 13px 0 13px 24px;
+  width: 100%;
+  cursor: pointer;
+}
+Header .group2 label div {
+  margin-right: 9px;
+}
+Header .group2 label div svg {
+  width: 16px;
+  height: 16px;
+}
+Header .group2 input {
+  border: none;
+}
+Header .group3 label {
+  cursor: pointer;
+}
+
+.txt {
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 44.8px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.cards {
+  align-items: center;
+  text-align: center;
+}
+.cards div {
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  border: 1px solid #EBEBF1;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.cards div:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .group3 {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  Header {
+    align-items: initial;
+    flex-direction: row;
+  }
+  Header .group1-icon {
+    display: none;
+    position: absolute;
+  }
+  Header .group1-icon svg {
+    display: none;
+  }
+  Header .group1 {
+    border-bottom: none;
+    width: auto;
+    padding: 25px 0 25px 20px;
+  }
+  Header .group2 {
+    margin: 21px 50px;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #EBEBF1;
+    border-radius: 5px;
+  }
+  Header .group2 label {
+    margin: 12px 9px 12px 14px;
+    align-items: center;
+  }
+  Header .group2 label div {
+    height: 24px;
+    width: 24px;
+  }
+  Header .group2 label div svg {
+    height: 24px;
+    width: 24px;
+  }
+  Header .group2 label input {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    color: #BBC4D6;
+  }
+  Header .group3 {
+    border-left: 1px solid rgb(226, 223, 223);
+    align-items: center;
+    padding: 21px;
+  }
+  Header .group3 label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  Header .group3 label div:nth-child(1) {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #768298;
+    margin-right: 10px;
+  }
+  Header .group3 label div:nth-child(2) {
+    height: 40px;
+    width: 40px;
+  }
+  Header .group3 label div:nth-child(2) svg {
+    height: 40px;
+    width: 40px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 19px;
+    align-items: center;
+  }
+  .cards div {
+    width: 230px;
+    height: 120px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1280px) {
+  .container {
+    margin: 0 100px;
+  }
+  Header .group1 {
+    padding: 25px 0 25px 100px;
+  }
+  Header .group2 {
+    margin: 21px 60px;
+  }
+  Header .group3 {
+    padding: 21px 100px 21px 21px;
+  }
+  .cards {
+    gap: 29px;
+  }
+  .cards div {
+    min-width: 287px;
+  }
+}/*# sourceMappingURL=index.css.map */
