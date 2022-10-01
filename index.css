@@ -8,6 +8,7 @@
 
 .container {
   margin: 0 20px;
+  max-width: 1440px;
 }
 
 input {
@@ -15,6 +16,7 @@ input {
 }
 
 Header {
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,6 +88,7 @@ Header .group2 label div svg {
 }
 Header .group2 input {
   border: none;
+  width: 100%;
 }
 Header .group3 label {
   cursor: pointer;
@@ -227,5 +230,14 @@ Header .group3 label {
   }
   .cards div {
     min-width: 287px;
+  }
+}
+@media screen and (min-width: 1441px) {
+  Header {
+    margin: 0 auto 70px;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 0 100px;
   }
 }/*# sourceMappingURL=index.css.map */
